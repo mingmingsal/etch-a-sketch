@@ -25,7 +25,7 @@ function createGrid(side){
         const square = document.createElement('div');
         square.classList.add('square');
         square.addEventListener('mouseover', () =>{
-            square.style.backgroundColor = "black";
+            square.style.backgroundColor = `rgb(${Math.random()*255},${Math.random()*255},${Math.random()*255})`;
             console.log('hover');
         });
         square.style.height = square.style.width = (`${grid.offsetWidth/side}px`);
